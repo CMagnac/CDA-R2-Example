@@ -3,19 +3,21 @@
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns="urn:hl7-org:v3">
         <!-- Unique Id for the document  -->
-    <id root="" extension=""/>
+    <id root="2.16.840.1.113883.2.99.9.3" extension="GHH-3131322"/>
     <!-- Code for document type      -->
-    <code code="" codeSystem="" codeSystemName="LOINC"
-        displayName=""/>
+    <code code="18842-5" codeSystem="2.16.840.1.113883.4.642.3.237" codeSystemName="LOINC"
+        displayName="Discharge summary note"/>
     <!-- Title for the document / This title will appear as the title in the browser -->
-    <title></title>
+    <title>GHH DISCHARGE REPORT</title>
     <!-- Date and time of document generation -->
-    <effectiveTime value=""/>
+    <effectiveTime value="20180520102000"/>
+    <!-- Confidentiality code for this document : Normal -->
+    <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
     <!-- Language code for this document: US English -->
     <languageCode code="en-US"/>
     <!-- Record target - demographic information for the patient -->
-    <recordTarget typeCode="RCT">
-        <patientRole classCode="PAT">
+    <recordTarget>
+        <patientRole>
             <!-- Patient identification in GHH MASTER PATIENT INDEX-->
             <id extension="3029290" root="2.16.840.1.113883.2.99.9.1"/>
             <!-- Patient address -->
@@ -39,15 +41,57 @@
                 <administrativeGenderCode code="F" codeSystem=""
                     displayName="Female"/>
                 <!-- Patient birth date -->
-                <birthTime value=""/>
+                <birthTime value="19550513"/>
 
             </patient>
             <!-- The patient's healthcare provider is GOOD HEALTH HOSPITAL -->
-            <providerOrganization classCode="ORG" determinerCode="">
+            <providerOrganization>
                 <id root="2.16.840.1.113883.2.99.9"/>
                 <name>GOOD HEALTH HOSPITAL</name>
             </providerOrganization>
 
         </patientRole>
     </recordTarget>
+    <!-- Document authors -->
+    <author>
+        <!-- Time of authoring for the main author -->
+        <time value="20180520102000"/>
+        <assignedAuthor>
+            <!-- Author identification in the company personnel registry -->
+            <id extension="3655" root="2.16.840.1.113883.2.99.9.2"/>
+            <!-- Author name -->
+            <assignedPerson>
+                <name>
+                    <family>SAMPLE</family>
+                    <given>SANDY</given>
+                    <suffix>MD</suffix>
+                </name>
+            </assignedPerson>
+            
+            <representedOrganization>
+                <id root="2.16.840.1.113883.2.99.9"/>
+                <name>GOOD HEALTH HOSPITAL </name>
+            </representedOrganization>
+        </assignedAuthor>
+    </author>
+    <!-- Data Enterer - If the author dictated and other person entered information into the application-->
+    <dataEnterer>
+        <!-- Time when information was keyed in -->
+        <time value="20180520102000"/>
+        <assignedEntity>
+            <!-- Author identification in the company personnel registry -->
+            <id extension="8254" root="2.16.840.1.113883.2.99.9.2"/>
+            <!--Data Enterer name -->
+            <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+                <name>
+                    <family>ENTERER</family>
+                    <given>TED</given>
+                </name>
+            </assignedPerson>
+            <representedOrganization>
+                <id root="2.16.840.1.113883.2.99.9"/>
+                <name>GOOD HEALTH HOSPITAL </name>
+            </representedOrganization>
+        </assignedEntity>
+    </dataEnterer>
 </ClinicalDocument>
