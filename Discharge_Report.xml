@@ -104,5 +104,29 @@
             </representedCustodianOrganization>
         </assignedCustodian>
     </custodian>
-    
+    <!-- Legal Authenticator : person legally responsible for the document -->
+    <legalAuthenticator>
+        <!-- Date/time of signature -->
+        <time value="20180520102000"/>
+        <!-- This is fixed if this element is included -->
+        <signatureCode code="S"/>
+        <assignedEntity>
+            <id extension="3655" root="2.16.840.1.113883.2.99.9.2"/>
+            
+            <!--Legal Authenticator Name -->
+
+            <assignedPerson>
+                <name>
+                    <family>SAMPLE</family>
+                    <given>SANDY</given>
+                    <suffix>MD</suffix>
+                </name>
+            </assignedPerson>
+            <representedOrganization>
+                <id root="2.16.840.1.113883.2.99.9"/>
+                <name>GOOD HEALTH HOSPITAL</name>
+            </representedOrganization>
+        </assignedEntity>
+
+    </legalAuthenticator>
 </ClinicalDocument>
