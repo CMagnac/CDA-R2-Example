@@ -94,4 +94,15 @@
             </representedOrganization>
         </assignedEntity>
     </dataEnterer>
+     <!--Custodian - Steward for the document : only organizations-->
+    <custodian>
+        <assignedCustodian>
+            <representedCustodianOrganization>
+                <!-- Just the OID for the organization / optional : org. name -->
+                <id root="2.16.840.1.113883.2.99.9"/>
+                <name>GOOD HEALTH HOSPITAL</name>
+            </representedCustodianOrganization>
+        </assignedCustodian>
+    </custodian>
+    
 </ClinicalDocument>
