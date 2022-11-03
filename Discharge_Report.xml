@@ -2,7 +2,9 @@
 <?xml-stylesheet type="text/xsl" href="CDA.xsl"?>
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns="urn:hl7-org:v3">
-    <!-- HEADER START -->
+
+    <!-- ** CDA Header ** -->
+
     <!-- Unique document id with document id extension -->
     <id root="2.16.840.1.113883.2.99.9.3" extension="GHH-3131322"/>
     <code code="18842-5" codeSystem="2.16.840.1.113883.4.642.3.237" codeSystemName="LOINC" displayName="Discharge summary note"/>
@@ -16,15 +18,17 @@
         <patientRole>
             <!-- Patient id extension with MPI -->
             <id extension="3029290" root="2.16.840.1.113883.2.99.9.1"/>
-            <addr>
+            <!-- HP is "primary home"-->
+            <addr use="HP">
 
                 <houseNumber>220</houseNumber>
                 <streetName>Mayfair Drive</streetName>
                 <city>Ann Arbor</city>
                 <state>Michigan</state>
-                <country>United States</country>
+                <country>US</country>
+                <!-- US is "United States" from ISO 3166-1 Country Codes: 1.0.3166.1 -->
             </addr>
-            <telecom value="tel:555-555-5555"></telecom>
+            <telecom value="tel:555-555-5555" use="HP"/>
             <patient>
                 <name>
                     <given>EVE</given>
@@ -118,9 +122,9 @@
         </assignedEntity>
 
     </legalAuthenticator>
-    <!-- HEADER END -->
 
-    <!-- BODY START -->
+    <!-- ******************************************************** CDA Body ******************************************************** -->
+
     <component>
 
 
@@ -137,15 +141,7 @@
                             <title> DISCHARGE REPORT</title>
                         </section>
                     </component>
-
-                    <component>
-                        <section>
-                            <title>Admitting Diagnosis </title>
-                            <text>Adenocarcinoma of the colon with liver metastases</text>
-                        </section>
-                    </component>
-
-
+                    <!-- ******************************************************** CHIEF COMPLAINT / REASON FOR VISIT ************************************ -->
                     <component>
 
                         <section>
@@ -153,15 +149,22 @@
                             <title>Chief Complaint</title>
 
                             <text>
-                                <list>
-                                    <item>Abdominal cramps</item>
-                                    <item>Nausea</item>
-                                    <item>Weakness </item>
-                                </list>
+                                <paragraph>Abdominal cramps, nausea, weakness </paragraph>
                             </text>
                         </section>
 
                     </component>
+                    <component>
+                        <section>
+                        <code code="42347-5" codeSystem="2.16.840.1.113883.4.642.3.237" codeSystemName="LOINC"/>
+                            <title>Admitting Diagnosis </title>
+                           <text> <paragraph>Adenocarcinoma of the colon with liver metastases</paragraph>
+                            </text>
+                        </section>
+                    </component>
+
+
+
 
                     <component>
 
@@ -170,11 +173,10 @@
                             <title>Social History</title>
 
                             <text>
-                                <list>
-                                    <item>Alcohol: Moderate, but nothing now.</item>
-                                    <item>Tobacco: Negative.</item>
-                                    <item>Drugs: Negative. </item>
-                                </list>
+                            <paragraph>Alcohol: Moderate, but nothing now.</paragraph>
+                            <paragraph>Tobacco: Negative.</paragraph>
+                            <paragraph>Drugs: Negative.</paragraph>
+                                
                             </text>
                         </section>
 
@@ -187,15 +189,13 @@
                             <title>Review of System</title>
 
                             <text>
-                                <list>
-                                    <item>Respiratory: Negative </item>
-                                    <item>Cardiovascular: Negative. He is very fit and used to run marathons.</item>
-                                    <item>Digestive: Abdominal cramps, nausea, occasional weakness. Stools are very thin.</item>
-                                    <item>Genitourinary: Negative </item>
-                                    <item>Endocrine: Negative </item>
-                                    <item>Musculoskeletal: Negative </item>
-                                    <item>Nervous: Anxiety, nervousness</item>
-                                </list>
+                            <paragraph>Respiratory: Negative </paragraph>
+                            <paragraph>Cardiovascular: Negative. He is very fit and used to run marathons.</paragraph>
+                            <paragraph>Digestive: Abdominal cramps, nausea, occasional weakness. Stools are very thin.</paragraph>
+                            <paragraph>Genitourinary: Negative  </paragraph>
+                            <paragraph>Endocrine: Negative</paragraph>
+                            <paragraph>Musculoskeletal: Negative</paragraph>
+                            <paragraph>Nervous: Anxiety, nervousness</paragraph>
                             </text>
                         </section>
 
@@ -236,7 +236,6 @@
         </structuredBody>
     </component>
 
-    <!-- BODY END -->
 
 
 </ClinicalDocument>
