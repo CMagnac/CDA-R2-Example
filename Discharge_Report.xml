@@ -3,15 +3,18 @@
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns="urn:hl7-org:v3">
     <!-- HEADER START -->
-
+    <!-- Unique document id with document id extension -->
     <id root="2.16.840.1.113883.2.99.9.3" extension="GHH-3131322"/>
     <code code="18842-5" codeSystem="2.16.840.1.113883.4.642.3.237" codeSystemName="LOINC" displayName="Discharge summary note"/>
     <title>GHH DISCHARGE REPORT</title>
+    <!-- Discharge Report Time -->
     <effectiveTime value="20180520102000"/>
     <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
     <languageCode code="en-US"/>
     <recordTarget>
+        <!-- Patient Demographic Information -->
         <patientRole>
+            <!-- Patient id extension with MPI -->
             <id extension="3029290" root="2.16.840.1.113883.2.99.9.1"/>
             <addr>
 
@@ -21,14 +24,14 @@
                 <state>Michigan</state>
                 <country>United States</country>
             </addr>
-            <telecom use="HP" value="tel:555-555-5555"></telecom>
-            <patient classCode="PSN" determinerCode="">
+            <telecom value="tel:555-555-5555"></telecom>
+            <patient>
                 <name>
                     <given>EVE</given>
-                    <given qualifier="IN">L.</given>
+                    <given>L.</given>
                     <family>EVERYWOMAN</family>
                 </name>
-                <administrativeGenderCode code="F" codeSystem="" displayName="Female"/>
+                <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1" displayName="Female"/>
                 <birthTime value="19550513"/>
 
             </patient>
@@ -41,6 +44,7 @@
     </recordTarget>
     <author>
         <time value="20180520102000"/>
+        <!-- Author/Legal Authenticator with id extension -->
         <assignedAuthor>
             <id extension="3655" root="2.16.840.1.113883.2.99.9.2"/>
             <assignedPerson>
@@ -61,6 +65,7 @@
     <dataEnterer>
 
         <time value="20180520102000"/>
+        <!-- Data Enterer with id extension -->
         <assignedEntity>
 
             <id extension="8254" root="2.16.840.1.113883.2.99.9.2"/>
@@ -72,6 +77,7 @@
                 </name>
             </assignedPerson>
             <representedOrganization>
+                <!-- Good Health hospital Id -->
                 <id root="2.16.840.1.113883.2.99.9"/>
                 <name>GOOD HEALTH HOSPITAL </name>
             </representedOrganization>
@@ -128,10 +134,16 @@
 
                         <section>
                             <code code="18842-5" codeSystem="2.16.840.1.113883.4.642.3.237" codeSystemName="LOINC"displayName="Discharge summary note"/>
-                            <title> DISCHARGE DOCUMENT</title>
+                            <title> DISCHARGE REPORT</title>
                         </section>
                     </component>
 
+                    <component>
+                        <section>
+                            <title>Admitting Diagnosis </title>
+                            <text>Adenocarcinoma of the colon with liver metastases</text>
+                        </section>
+                    </component>
 
 
                     <component>
