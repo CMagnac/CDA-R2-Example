@@ -143,6 +143,15 @@
                     </component>
                     <!-- ******************************************************** CHIEF COMPLAINT / REASON FOR VISIT ************************************ -->
                     <component>
+                        <section>
+                            <code code="46241-6" codeSystem="2.16.840.1.113883.4.642.3.237" codeSystemName="LOINC"/>
+                            <title>Admitting Diagnosis </title>
+                            <text>
+                                <paragraph>Adenocarcinoma of the colon with liver metastases</paragraph>
+                            </text>
+                        </section>
+                    </component>
+                    <component>
 
                         <section>
                             <code code="10154-3" codeSystem="2.16.840.1.113883.4.642.3.237" codeSystemName="LOINC"/>
@@ -154,15 +163,7 @@
                         </section>
 
                     </component>
-                    <component>
-                        <section>
-                            <code code="42347-5" codeSystem="2.16.840.1.113883.4.642.3.237" codeSystemName="LOINC"/>
-                            <title>Admitting Diagnosis </title>
-                            <text>
-                                <paragraph>Adenocarcinoma of the colon with liver metastases</paragraph>
-                            </text>
-                        </section>
-                    </component>
+                    
 
 
 
