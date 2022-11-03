@@ -156,9 +156,10 @@
                     </component>
                     <component>
                         <section>
-                        <code code="42347-5" codeSystem="2.16.840.1.113883.4.642.3.237" codeSystemName="LOINC"/>
+                            <code code="42347-5" codeSystem="2.16.840.1.113883.4.642.3.237" codeSystemName="LOINC"/>
                             <title>Admitting Diagnosis </title>
-                           <text> <paragraph>Adenocarcinoma of the colon with liver metastases</paragraph>
+                            <text>
+                                <paragraph>Adenocarcinoma of the colon with liver metastases</paragraph>
                             </text>
                         </section>
                     </component>
@@ -173,10 +174,10 @@
                             <title>Social History</title>
 
                             <text>
-                            <paragraph>Alcohol: Moderate, but nothing now.</paragraph>
-                            <paragraph>Tobacco: Negative.</paragraph>
-                            <paragraph>Drugs: Negative.</paragraph>
-                                
+                                <paragraph>Alcohol: Moderate, but nothing now.</paragraph>
+                                <paragraph>Tobacco: Negative.</paragraph>
+                                <paragraph>Drugs: Negative.</paragraph>
+
                             </text>
                         </section>
 
@@ -189,13 +190,13 @@
                             <title>Review of System</title>
 
                             <text>
-                            <paragraph>Respiratory: Negative </paragraph>
-                            <paragraph>Cardiovascular: Negative. He is very fit and used to run marathons.</paragraph>
-                            <paragraph>Digestive: Abdominal cramps, nausea, occasional weakness. Stools are very thin.</paragraph>
-                            <paragraph>Genitourinary: Negative  </paragraph>
-                            <paragraph>Endocrine: Negative</paragraph>
-                            <paragraph>Musculoskeletal: Negative</paragraph>
-                            <paragraph>Nervous: Anxiety, nervousness</paragraph>
+                                <paragraph>Respiratory: Negative </paragraph>
+                                <paragraph>Cardiovascular: Negative. He is very fit and used to run marathons.</paragraph>
+                                <paragraph>Digestive: Abdominal cramps, nausea, occasional weakness. Stools are very thin.</paragraph>
+                                <paragraph>Genitourinary: Negative  </paragraph>
+                                <paragraph>Endocrine: Negative</paragraph>
+                                <paragraph>Musculoskeletal: Negative</paragraph>
+                                <paragraph>Nervous: Anxiety, nervousness</paragraph>
                             </text>
                         </section>
 
