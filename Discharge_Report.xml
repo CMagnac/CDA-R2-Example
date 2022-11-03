@@ -2,7 +2,6 @@
 <?xml-stylesheet type="text/xsl" href="CDA.xsl"?>
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns="urn:hl7-org:v3">
-
     <!-- ** CDA Header ** -->
     <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
     <!-- Unique document id with document id extension -->
@@ -20,7 +19,6 @@
             <id extension="3029290" root="2.16.840.1.113883.2.99.9.1"/>
             <!-- HP is "primary home"-->
             <addr use="HP">
-
                 <houseNumber>220</houseNumber>
                 <streetName>Mayfair Drive</streetName>
                 <city>Ann Arbor</city>
@@ -37,13 +35,11 @@
                 </name>
                 <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1" displayName="Female"/>
                 <birthTime value="19550513"/>
-
             </patient>
             <providerOrganization>
                 <id root="2.16.840.1.113883.2.99.9"/>
                 <name>GOOD HEALTH HOSPITAL</name>
             </providerOrganization>
-
         </patientRole>
     </recordTarget>
     <author>
@@ -58,22 +54,17 @@
                     <suffix>MD</suffix>
                 </name>
             </assignedPerson>
-
             <representedOrganization>
                 <id root="2.16.840.1.113883.2.99.9"/>
                 <name>GOOD HEALTH HOSPITAL </name>
             </representedOrganization>
         </assignedAuthor>
     </author>
-
     <dataEnterer>
-
         <time value="20180520102000"/>
         <!-- Data Enterer with id extension -->
         <assignedEntity>
-
             <id extension="8254" root="2.16.840.1.113883.2.99.9.2"/>
-
             <assignedPerson classCode="PSN" determinerCode="INSTANCE">
                 <name>
                     <family>ENTERER</family>
@@ -87,27 +78,19 @@
             </representedOrganization>
         </assignedEntity>
     </dataEnterer>
-
     <custodian>
         <assignedCustodian>
             <representedCustodianOrganization>
-
                 <id root="2.16.840.1.113883.2.99.9"/>
                 <name>GOOD HEALTH HOSPITAL</name>
             </representedCustodianOrganization>
         </assignedCustodian>
     </custodian>
-
     <legalAuthenticator>
-
         <time value="20180520102000"/>
-
         <signatureCode code="S"/>
         <assignedEntity>
             <id extension="3655" root="2.16.840.1.113883.2.99.9.2"/>
-
-
-
             <assignedPerson>
                 <name>
                     <family>SAMPLE</family>
@@ -120,18 +103,10 @@
                 <name>GOOD HEALTH HOSPITAL</name>
             </representedOrganization>
         </assignedEntity>
-
     </legalAuthenticator>
-
-    <!-- ******************************************************** CDA Body ******************************************************** -->
-
+    <!-- ******************************************************** CDA Body ************************************************************ -->
     <component>
-
-
         <structuredBody>
-
-
-
             <component>
                 <section>
                     <component>
@@ -141,7 +116,7 @@
                             <title> DISCHARGE REPORT</title>
                         </section>
                     </component>
-                    <!-- ******************************************************** CHIEF COMPLAINT / REASON FOR VISIT ************************************ -->
+    <!-- ******************************************************** CHIEF COMPLAINT / REASON FOR VISIT ************************************ -->
                     <component>
                         <section>
                             <code code="46241-6" codeSystem="2.16.840.1.113883.4.642.3.237" codeSystemName="LOINC"/>
@@ -152,44 +127,29 @@
                         </section>
                     </component>
                     <component>
-
                         <section>
                             <code code="10154-3" codeSystem="2.16.840.1.113883.4.642.3.237" codeSystemName="LOINC"/>
                             <title>Chief Complaint</title>
-
                             <text>
                                 <paragraph>Abdominal cramps, nausea, weakness </paragraph>
                             </text>
                         </section>
-
                     </component>
-                    
-
-
-
-
                     <component>
-
                         <section>
                             <code code="29762-2" codeSystem="2.16.840.1.113883.4.642.3.237" codeSystemName="LOINC"/>
                             <title>Social History</title>
-
                             <text>
                                 <paragraph>Alcohol: Moderate, but nothing now.</paragraph>
                                 <paragraph>Tobacco: Negative.</paragraph>
                                 <paragraph>Drugs: Negative.</paragraph>
-
                             </text>
                         </section>
-
                     </component>
-
                     <component>
-
                         <section>
                             <code code="10187-3" codeSystem="2.16.840.1.113883.4.642.3.237" codeSystemName="LOINC"/>
                             <title>Review of System</title>
-
                             <text>
                                 <paragraph>Respiratory: Negative </paragraph>
                                 <paragraph>Cardiovascular: Negative. He is very fit and used to run marathons.</paragraph>
@@ -200,44 +160,27 @@
                                 <paragraph>Nervous: Anxiety, nervousness</paragraph>
                             </text>
                         </section>
-
                     </component>
                     <component>
-
                         <section>
                             <code code="30954-2" codeSystem="2.16.840.1.113883.4.642.3.237" codeSystemName="LOINC"/>
                             <title>Laboratory</title>
-
                             <text>
                                 CEA: 104.9 ng/mL (discharge date)
                             </text>
                         </section>
-
                     </component>
-
                     <component>
-
                         <section>
                             <code code="29545-1" codeSystem="2.16.840.1.113883.4.642.3.237" codeSystemName="LOINC"/>
                             <title>Discharge diagnosis</title>
-
                             <text>
                                 Colon Adenocarcinoma w/liver metastases
                             </text>
                         </section>
-
                     </component>
-
-
-
-
-
                 </section>
-
             </component>
         </structuredBody>
     </component>
-
-
-
 </ClinicalDocument>
